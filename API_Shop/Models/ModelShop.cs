@@ -11,12 +11,14 @@ namespace API_Shop.Models
         public string Product { get; set; }
         public int Quantity { get; set; }
         public int Cost { get; set; }
+        public string Image { get; set; }
         public ModelShop(Shop product)
         {
             Id = product.Id;
             Product = product.Product;
             Quantity = product.Quantity;
             Cost = product.Cost;
+            Image = product.Image;
         }
     }
 }
